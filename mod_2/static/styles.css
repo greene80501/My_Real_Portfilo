@@ -1,0 +1,529 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    scroll-behavior: smooth;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+    color: #ffffff;
+}
+
+.nav-link {
+    cursor: pointer;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #1e1e1e;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00ff84;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #00e5ff;
+}
+
+.cta-button {
+    background-color: #00ff84;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #00e5ff;
+}
+
+.cta-button2 {
+    background-color: #00ff84;
+    padding: 5rem 5rem;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 35px;
+}
+.cta-button2:hover {
+    background-color: #00e5ff;
+}
+h6 {
+    margin-top: 3rem;
+    color: #ffffff;
+    font-size: 5rem;
+}
+h5 {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: large;
+}
+
+
+
+
+
+
+/* Hero Section Styles */
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 10rem 2rem;
+    overflow: hidden;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: #00ff84;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero-button {
+    background-color: #00e5ff;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.hero-button:hover {
+    background-color: #00ff84;
+}
+
+/* Code Snippet Falling Styles */
+.code-fall {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.code-snippet {
+    position: absolute;
+    top: -50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    white-space: nowrap;
+    animation: fall linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(110vh);
+        opacity: 0;
+    }
+}
+/* About Me Section */
+.about_me {
+    padding: 5rem 2rem;
+    background-color: #1e1e1e; /* Match background with the website's dark theme */
+    color: #ffffff;
+    text-align: center;
+}
+
+.about-me-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #2c2c2c; /* Slightly lighter dark background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for emphasis */
+}
+
+.about_me h2 {
+    color: #00e5ff; /* Keep the cyan color for headers */
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.about_me p {
+    font-size: 1.2rem;
+    line-height: 1.75;
+    color: #dcdcdc;
+}
+
+.about_me .highlight {
+    color: #00ff84; /* Match the bright green color used elsewhere */
+    font-weight: bold;
+}
+
+.about_me p strong {
+    color: #00e5ff;
+    font-weight: bold;
+}
+.about_me .pink {
+    color: #FF69B4;
+    font-weight: bold;
+}
+/* Optional: Add a hover effect for text links */
+.about_me p a {
+    color: #00e5ff;
+    text-decoration: underline;
+}
+
+.about_me p a:hover {
+    color: #00ff84;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-me-content {
+        padding: 1.5rem;
+    }
+
+    .about_me h2 {
+        font-size: 2rem;
+    }
+
+    .about_me p {
+        font-size: 1rem;
+    }
+}
+
+/* Skills Section Styles */
+.skills {
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.skills h2 {
+    margin-bottom: 3rem;
+    color: #00e5ff;
+}
+
+.skill-bars {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skill {
+    margin-bottom: 1.5rem;
+}
+
+.skill span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.progress-bar {
+    background-color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress {
+    height: 1.5rem;
+    background-color: #00ff84;
+    position: relative;
+}
+
+.progress-percent {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Experience Section */
+.experience {
+    padding: 3rem 2rem;
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+.experience h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #00ff84;
+}
+
+/* Timeline Wrapper */
+.timeline-wrapper {
+    position: relative;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap;
+    width: 100%;
+    overflow-y: hidden; /* Hide vertical overflow */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+    cursor: grab; /* Add a grab cursor for dragging */
+}
+
+.timeline-wrapper::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Chrome/Safari */
+}
+
+/* Timeline Line */
+.timeline-line {
+    position: relative;
+    width: 200%; /* Double the screen width */
+    margin: 0 auto;
+    height: 4px;
+    background-color: #00e5ff; /* Cyan horizontal timeline */
+    margin-bottom: 60px;
+    margin-top: 60px;
+    z-index: 1;
+}
+
+/* Top and Bottom Containers */
+.timeline-top, .timeline-bottom {
+    display: flex;
+    justify-content: space-around;
+    width: 200%; /* Double the screen width */
+    margin: 0 auto;
+    white-space: nowrap;
+    position: relative;
+}
+
+/* Timeline Items */
+.timeline-item {
+    width: 150px;
+    height: 100px;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+.timeline-item:hover {
+    background-color: #00e5ff;
+}
+
+.timeline-item.expanded {
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.more-info {
+    display: none; /* Initially hidden */
+    margin-top: 10px;
+    font-size: 12px;
+    color: #ccc;
+}
+
+/* Show .more-info when the item is expanded */
+.timeline-item.expanded .more-info {
+    display: block;
+}
+
+/* Add a smooth transition for expanding and collapsing */
+.timeline-item.expanded h3, 
+.timeline-item.expanded p {
+    font-size: 18px; /* Increase text size slightly when expanded */
+}
+
+/* Connect lines for top items */
+.timeline-top .timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 73px;
+    background-color: #00e5ff;
+    bottom: -73px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/* Connect lines for bottom items */
+.timeline-bottom .timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 73px;
+    background-color: #00e5ff;
+    top: -73px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/* Bottom items get a higher z-index */
+.timeline-bottom .timeline-item {
+    z-index: 4;
+}
+
+.align-top {
+    align-self: flex-end;
+}
+
+.align-bottom {
+    align-self: flex-start;
+}
+
+/* Projects Section */
+.projects {
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.projects h2 {
+    margin-bottom: 3rem;
+    color: #00e5ff;
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-item {
+    background-color: #1e1e1e;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    width: calc(33% - 2rem);
+    box-sizing: border-box;
+    transition: transform 0.3s;
+}
+
+.project-item:hover {
+    transform: scale(1.05);
+}
+
+.project-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.project-item h3 {
+    margin: 1rem 0 0.5rem;
+    color: #00ff84;
+}
+
+.project-button {
+    background-color: #00e5ff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 1rem;
+    color: #ffffff;
+}
+
+.project-button:hover {
+    background-color: #00ff84;
+}
+
+/* Contact Section */
+.contact {
+    padding: 5rem 2rem;
+    background-color: #1e1e1e;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 10rem;
+    color: #00ff84;
+}
+
+
+.contact-form button:hover {
+    background-color: #00ff84;
+}
+
+.social-links {
+    margin-top: 2rem;
+}
+
+.social-links a {
+    color: #00e5ff;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+}
+
+.social-links a:hover {
+    color: #00ff84;
+}
+
+/* Footer */
+.footer {
+    padding: 2rem;
+    text-align: center;
+    background-color: #1e1e1e;
+}
+
+.footer p {
+    margin: 0;
+    color: #ccc;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .timeline {
+        overflow-x: auto;
+        display: flex;
+    }
+
+    .timeline-item {
+        flex: 0 0 auto;
+    }
+
+    .project-item {
+        width: calc(100% - 2rem);
+    }
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wyatt Greene - Resume & Journey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="static/styles.css">
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+     integrity="sha384-8yE4JbVhqtY5Rg1dF1Rqmx+J4Uw42sAqBoZ8CdF7Y6PZj9mK3epxSzRT73DBHVL7"
+     crossorigin="anonymous">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Wyatt Greene</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#experience" class="nav-link">Time Line</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="/static/Wyatts_Resume.pdf" class="cta-button" download="Wyatt_Greene_Resume.pdf">Download Resume</a>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Wyatt Greene</h1>
+        <p><i class="fas fa-code"></i> Dreamer | 
+           <i class="fas fa-cogs"></i> Learner |
+           <i class="fas fa-lightbulb"></i> Collaborator</p>
+        <a href="#skills" class="hero-button">Explore Skills</a>
+        <div class="code-fall"></div>
+    </section>
+    <section id="about_me" class="about_me">
+        <div class="about-me-content">
+            <h2>About Me</h2>
+        <p>
+            Hi, I'm <span class="highlight">Wyatt Greene</span>, an <strong>aspiring developer</strong> with a passion for building applications that make a 
+            <span class="highlight">difference.</span> I'm currently a <span class="highlight">junior in high school</span> while also enrolled at <span class="pink">Front Range Community College,
+            </span> where I'm pursuing an Associates of Applied Science in 
+            <span class="pink">Computer Information Systems</span>.
+        </p>
+        <p>
+            I'm actively expanding my skills in <strong>developing,</strong> I enjoy working on projects that allow me to combine 
+            <strong>creativity</strong> with problem-solving. My dream is to make a <span class="highlight">difference.</span>
+        </p>
+    </div>
+</section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2><i class="fas fa-tools"></i> Skills & Expertise</h2>
+        <div class="skill-bars">
+            <!-- Skill Item -->
+            <div class="skill">
+                <span>Python</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 95%;">
+                        <span class="progress-percent">95%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>JavaScript</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 25%;">
+                        <span class="progress-percent">25%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>HTML & CSS</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;">
+                        <span class="progress-percent">80%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>C</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 50%;">
+                        <span class="progress-percent">50%</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Experience Section (Timeline) -->
+    <section id="experience" class="experience">
+        <h2>My Journey</h2>
+
+        <!-- Horizontal Scroll Container for Events -->
+        <div class="timeline-wrapper">
+            <div class="timeline-top">
+                <div class="timeline-item align-top" onclick="toggleExpand(this)">
+                    <div class="timeline-content">
+                        <h3>Python</h3>
+                        <p>2020 - Present</p>
+                        <div class="more-info">
+                            <p>I started coding in Python in 9th grade <p>with a P-Tech class</p> <p>This started my coding journey </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Container for Timeline Line -->
+            <div class="timeline-line"></div>
+
+            <div class="timeline-bottom">
+                <div class="timeline-item align-bottom" onclick="toggleExpand(this)">
+                    <div class="timeline-content">
+                        <h3>Started Coding</h3>
+                        <p>2019</p>
+                        <div class="more-info">
+                            <p>I started coding in 2019 with my intro</p> <p>to computer science class in 6th</p> <p>grade I started with Processing</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item align-bottom" onclick="toggleExpand(this)">
+                    <div class="timeline-content">
+                        <h3>Modern Day</h3>
+                        <p>Presint</p>
+                        <div class="more-info">
+                            <p>Today i have skills in many languages</p> <p>and many applications</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    
+    <!-- Projects Section -->
+<section id="projects" class="projects">
+    <h2><i class="fas fa-project-diagram"></i> Projects & Achievements</h2>
+    <div class="project-grid">
+
+        <!-- Project 1 -->
+        <div class="project-item">
+            <a href="https://docs.google.com/document/d/1bV7D845vvRKGZ_5bzMlpC4NV-eEAwi1DLvpeA1Qn7wc/edit" target="_blank">
+                <img src="static/Imgs/Papper.png" alt="Machine Learning Paper">
+                <h3>Machine Learning Paper</h3>
+                <p>This ongoing project explores the effects of five activation functions on neural networks. The research focuses on three types: image recognition, LSTM, and a third yet to be decided.</p>
+                <a href="https://docs.google.com/document/d/1bV7D845vvRKGZ_5bzMlpC4NV-eEAwi1DLvpeA1Qn7wc/edit" target="_blank" class="project-button">View Paper</a>
+            </a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-item">
+            <a href="https://github.com/greene80501/AS" target="_blank">
+                <img src="static/Imgs/ASL_BOT.png" alt="ASL Bot">
+                <h3>American Sign Language AI Bot</h3>
+                <p>This was a multi-month project in collaboration with Adam Duncan. I handled the front end and data processing (with over 200k pics for training the model), while Adam developed an AI using TensorFlow. The program utilized CV2 and MediaPipe to capture data from a laptop's webcam and translate sign language in real-time.</p>
+                <a href="https://github.com/greene80501/AS" target="_blank" class="project-button">View Project</a>
+            </a>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-item">
+            <a href="https://github.com/greene80501/Ic_todoist" target="_blank">
+                <img src="static/Imgs/Ic_todoist.png" alt="AssignMate">
+                <h3>AssignMate</h3>
+                <p>This script automates task management by web scraping your school's class website to extract assignment details. It then uses the Todoist API to create corresponding to-do items in your Todoist account, streamlining your assignment tracking.                </p>
+                <a href="https://github.com/greene80501/Ic_todoist" target="_blank" class="project-button">View Project</a>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h6><i class="fas fa-envelope"></i> Let's Connect</h6>
+        <div class="contact-info">
+
+            <a href="https://github.com/greene80501" class="cta-button2">GitHub</a>
+            <a href="mailto:greene.wyatt30@gmail.com" class="cta-button2">Greene.wyatt30@gmail.com</a>
+            <a href="www.linkedin.com/in/wyatt-greene-9235ab333" class="cta-button2"> Linkedin </a>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2023 Wyatt Greene. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to JavaScript -->
+    <script src="static/script.js"></script>
+</body>
+</html>
